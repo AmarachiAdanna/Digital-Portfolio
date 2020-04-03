@@ -1,0 +1,114 @@
+<div class="container">
+        <h2 class="title">Jacob Reilly-Cooper</h2>
+        <p>This will be my own portfolio</p>
+    </div>
+<div class="about-me">
+        <p>Thanks for checking the site. I'm a web developer who is available for hire.</p>
+        <p>Get in touch.</p>
+        <a href="# class="button">Hire me, whenever you are ready.</a>
+    </div>
+
+    <div class="footer">Code Nation 2020 &copy; All Rights Reserved, Made virtually with Jacob via Zoom </div>
+<div class="navbar">
+
+        <h1>Digital Portfolio</h1>
+        <ul>
+            <!-- unordered list -->
+            <!-- links inside of the href -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </div>
+* {
+    /* capturing everything that isn't styled.
+       Wildcard...
+       in css, every line needs to be closed with a semi-colon
+     */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    /* target everything inside of the navbar */
+    background-color: rgb(0, 238, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.navbar ul li {
+    /* target only the ul li inside of the navbar */
+    list-style-type: none;
+    display: inline-block;
+}
+
+.navbar li a {
+    /* inside of the navbar class... we are targeting specific elements
+    li a inside of the navbar
+     */
+    text-decoration: none;
+    /* no decoration allows the link to simply look like text. No underlines, just text */
+    padding: 15px 10px;
+    /* is the space around the text */
+}
+
+.container {
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    /* shortly... */
+}
+
+.title {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.about-me {
+    width: 33.3%;
+    /* split the screen into thirds... */
+    text-align: left;
+    /* putting the text inside of about-me to the left */
+}
+
+.image-container {
+    width: 33.3%;
+}
+
+.image-container img{
+    width: 200px;
+    height: 100px;
+}
+
+/* key : value pairs
+    key = color
+    value = red */
+
+.about-me p {
+    margin-bottom: 30px;
+    /* space at the bottom of the paragraph of 30px */
+    font-size: 20px;
+    /* ... */
+}
+
+.button {
+    text-decoration: none;
+    color: black;
+    padding: 15px 20px;
+    background-color: rgb(225, 0, 255);
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.footer {
+    text-align: center;
+    background-color: rgb(0, 238, 255);
+    color: black;
+    padding: 20px 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
